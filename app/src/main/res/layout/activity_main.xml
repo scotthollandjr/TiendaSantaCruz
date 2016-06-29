@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.guest.tiendasantacruz.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/panaderia"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to"
+        android:id="@+id/textView"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Restaurante"
+        android:id="@+id/menuButton"
+        android:height="100dp"
+        android:layout_above="@+id/panButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorPrimaryLight"
+        android:textColor="#fff"
+        android:textSize="50dp"
+        android:focusableInTouchMode="false"
+        android:fontFamily="serif"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pan Dulces"
+        android:id="@+id/panButton"
+        android:height="100dp"
+        android:layout_above="@+id/comeButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorAccent"
+        android:textColor="#fff"
+        android:textSize="50dp"
+        android:fontFamily="serif"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comestibles"
+        android:id="@+id/comeButton"
+        android:height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#82b166d1"
+        android:textColor="#fff"
+        android:textSize="50dp"
+        android:fontFamily="serif"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tienda Santa Cruz"
+        android:id="@+id/appNameTextView"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:textSize="75sp"
+        android:textStyle="bold"
+        android:singleLine="false"
+        android:textAlignment="center" />
+
+</RelativeLayout>
